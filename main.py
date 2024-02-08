@@ -11,7 +11,7 @@ def change_directory():
     )
     filename = fd.askopenfilename(
         title='Select Northstar Launcher',
-        initialdir='/',
+        initialdir='C:/Program Files (x86)/Steam/steamapps/common/Titanfall2',
         filetypes=filetypes
     )
     if filename:
