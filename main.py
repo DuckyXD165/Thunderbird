@@ -1,4 +1,5 @@
 import os
+import webbrowser
 from tkinter import *
 from tkinter import filedialog as fd
 directory = r"C:\Program Files (x86)\Steam\steamapps\common\Titanfall2\NorthstarLauncher.exe" 
@@ -21,7 +22,7 @@ def change_directory():
 def start_northstar():
     try:
         print(directory)
-        os.startfile(directory)
+        webbrowser.open('steam://rungameid/1237970')
     except:
         show_error()
 def show_error():
