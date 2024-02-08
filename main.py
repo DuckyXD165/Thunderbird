@@ -24,7 +24,10 @@ def start_northstar():
         print(directory)
         webbrowser.open('steam://rungameid/1237970')
     except:
-        show_error()
+            try:
+                os.startfile(directory)
+            except:
+                show_error()
 def show_error():
     global directory
     lbl1 = Label(root, text="Failed to Start Northstar!")
